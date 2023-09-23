@@ -1,0 +1,79 @@
+
+
+.Carousel 
+{
+    position: relative;
+    height: 100%;
+
+    width: 550px;
+}
+
+
+.leftArrow 
+{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+    font-size: 45px;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+.rightArrow 
+{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    font-size: 45px;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+.CarouselView 
+{
+    overflow: hidden;
+
+    width: 500px;
+    height: 280px;
+    margin: 0 auto;
+}
+
+
+.CarouselSlideView 
+{
+    display: flex;
+    height: 100%;
+    transition: transform ease-out 0.8s;
+}
+
+
+.CarouselSlide 
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.CarouselDotSelection 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.CarouselDot 
+{
+    margin: 0 3px;
+    cursor: pointer;
+    font-size: 20px;
+}
+

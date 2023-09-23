@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Carousel from "./Carousel/Carousel"
+
 function App() {
+
+  const slides = [
+    require("./Carousel/slides/bild1.JPG"),
+    require("./Carousel/slides/bild2.JPG"),
+    require("./Carousel/slides/bild3.JPG"),
+    require("./Carousel/slides/bild4.JPG"),
+    require("./Carousel/slides/bild5.JPG")
+  ]
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> My Carousel !!! </h1>
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+        <Carousel slides={slides} parentWidth={500}/>
+      </div>
     </div>
   );
 }
