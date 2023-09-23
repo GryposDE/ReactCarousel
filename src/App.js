@@ -2,14 +2,15 @@ import './App.css';
 
 import Carousel from "./Carousel/Carousel"
 
+
 function App() {
 
   const slides = [
-    require("./Carousel/slides/bild1.JPG"),
-    require("./Carousel/slides/bild2.JPG"),
-    require("./Carousel/slides/bild3.JPG"),
-    require("./Carousel/slides/bild4.JPG"),
-    require("./Carousel/slides/bild5.JPG")
+    { src: require("./Carousel/slides/bild1.JPG"), alt: 'alt_text_1' },
+    { src: require("./Carousel/slides/bild2.JPG"), alt: 'alt_text_2' },
+    { src: require("./Carousel/slides/bild3.JPG"), alt: 'alt_text_3' },
+    { src: require("./Carousel/slides/bild4.JPG"), alt: 'alt_text_4' },
+    { src: require("./Carousel/slides/bild5.JPG"), alt: 'alt_text_5' },
   ]
   
 
